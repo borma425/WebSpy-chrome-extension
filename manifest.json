@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "js/bg.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/content.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Monitor HTTP GET/POST requests. XML/JSON Viewer/Formatter for request and response body. REST Client: send GET/POST/PATCH requests.",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "images/spy128.png",
+      "16": "images/spy16.png",
+      "32": "images/spy32.png",
+      "48": "images/spy48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArU9alGaiCbpONeNi/jM6F1CPMu99UJDEFQpKqNWB8/2I4TY6vcgQXpCB2+50HPKwitRoZmQ4wVzjlF/ke1s3pYacSKQRNm/Mu9wIiOl+7gmSuu6fDKJ3BD5iC21UXKRneec08JwBDiU++8BIHiLwpRvmDFK8VS24JDOthWzUj5NMsugwntk859fmqhO3cYSF6jSL3zUoDk4PC1gKfVKLj5pZbsL7OgnyerVmlye0TntWa2bHwfZAm+we8taV+C78ftHsC2CM14Q2HOSDQghkMPZSSCmu0kM6nI1VZVkHUcgC9OnLO/fU3DFTPILhUIbbKuEP9lT9GbE9nV5vhgWRbQIDAQAB",
+   "manifest_version": 2,
+   "name": "WebSpy: explore and test website",
+   "permissions": [ "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.22"
+}
